@@ -1,0 +1,16 @@
+avatar:
+    url: /images/fll.jpg
+    rounded: true
+    opacity: 1
+
+reward:
+    enable: false
+
+# 可选 light | dark | auto | time   配置处
+mode: auto
+
+social:
+    - name: GitHub
+      link: https://github.com/Lingo1101
+      icon: icon-github-line
+      color: "#181717"
