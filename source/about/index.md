@@ -4,7 +4,7 @@ date: 2020-10-25 16：36：27
 type: "about"
 updated: 2018-01-30 15:10:32
 aplayer: true
-reward: true
+reward: false
 ---
 
 > ## Me
@@ -46,7 +46,6 @@ reward: true
 
 大部分社交方式都已放在了侧边栏中，你可以选择你喜欢的方式联系我或找我玩。
 
-- Email：<me@yunyoujun.cn> （大概只用得到自己仍然有钱续费域名的时候吧！~~（笑）~~）
 - GitHub: [Lingo1101]](https://github.com/Lingo1101)
 - 微博：[一袋栗子oo](https://weibo.com/u/5747304475)
 - 网易云音乐: [柚茶1101](https://music.163.com/#/my/m/music/playlist?id=542561628)
