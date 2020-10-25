@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: cathy
+title: 玲玲酱的栖息点
 subtitle: ''
-description: ''
+description: 希望能成为一个温柔且有趣的人
 keywords:
 author: 符玲玲
 language: en
-timezone: ''
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
@@ -32,7 +32,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :year/:month/:title # File name of new posts
+new_post_name: :title # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
