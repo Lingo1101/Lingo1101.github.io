@@ -23,8 +23,6 @@ reward: false
 - 目标：抱歉 || 抱歉 || 择一座有趣的城市开一个有灵魂的咖啡店或者花店
 - 梦想：环球旅行 && 不说不说
 
-![工作就输了](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/no-work.jpg)
-
 以及种花种草，养狗养猫，情情爱爱一边放。
 
 <details>
@@ -46,7 +44,7 @@ reward: false
 
 大部分社交方式都已放在了侧边栏中，你可以选择你喜欢的方式联系我或找我玩。
 
-- GitHub: [Lingo1101]](https://github.com/Lingo1101)
+- GitHub: [Lingo1101](https://github.com/Lingo1101)
 - 微博：[一袋栗子oo](https://weibo.com/u/5747304475)
 - 网易云音乐: [柚茶1101](https://music.163.com/#/my/m/music/playlist?id=542561628)
 - QQHome：[森林先生](https://user.qzone.qq.com/2809902487/main)（好像非好友不可访问嘻嘻）

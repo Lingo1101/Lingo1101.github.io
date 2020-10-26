@@ -15,6 +15,21 @@ social:
       icon: icon-github-line
       color: "#181717"
 
+    - name: weibo
+      link: https://weibo.com/u/5747304475
+      icon: icon-weibo-line 
+      color: "#E6162D"
+
+    - name: netease-cloud-music
+      link: https://music.163.com/#/my/m/music/playlist?id=542561628
+      icon: icon-netease-cloud-music-line
+      color: "#C10D0C"
+
+    - name: E-Mail
+      link: mailto:cathy0923@scuec.edu.cn
+      icon: icon-mail-line
+      color: "#8E71C1" 
+
 tags:
   Vue: "#4fc08d"
   Hexo: "#0E834D"
@@ -39,7 +54,7 @@ banner:
   border: true
   cloud:
     enable: true
-    color: "white"
+    color: "blue"
   go_down:
     enable: true
     icon: icon-arrow-down-s-line
