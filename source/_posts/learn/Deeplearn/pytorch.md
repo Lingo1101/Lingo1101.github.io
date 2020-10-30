@@ -2,7 +2,7 @@
 title: pytorch构建模型
 date: 2020-10-24 23:05:19
 tags: deeplearn 
-categories: learn
+categories: 玲酱の学习笔记
 ---
 
 # 类中的方法和属性
@@ -34,14 +34,14 @@ print(my_car.model)
 程序中没有直接调用__init__方法，但make，model，year等属性通过Car()类自动调用了__init__方法，生成了属性。
   
 ## self参数
-“self”的英文意思很明显，是自己的意思。即实际指的是，类实例对象本身。
+“self”实际指的是，类实例对象本身。
 
 同时，由于说到“自己”这个词，都是和相对而言的“其他”而说的；而此处的其他，指的是，类Class，和其他变量，比如局部变量，全局变量等。
 此处的self，是个对象（Object），是当前类的实例。
 因此，对应的self.valueName 和 self.function()中的valueName：表示self对象，即实例的变量。与其他的，Class的变量，全局的变量，局部的变量，是相对应的。
 function：表示是调用的是self对象，即实例的函数。与其他的全局的函数，是相对应的。
 
-因为Python已经规定：函数的第一个参数，就必须是实例对象本身，并且约定俗成，把其名字写为self。因此我们再定义类中的所有函数时必须传入self参数。  
+因为Python已经规定：**函数的第一个参数必须是实例对象本身，并且约定俗成把其名字写为self。因此我们再定义类中的所有函数时必须传入self参数。** 
 ```
 class Car():
     def __init__(self,make,model,year):    ###
@@ -56,21 +56,23 @@ class Car():
 my_car = Car('aodi','A4','2010')
 my_car.get_descriptive_name()
 ```
+# Tips:
+pytorch只会处理二维数据
 
 # pytorch模型构建
 ## 模型总体结构
 
-```
+```py
 import torch.nn as nn
 
 class MyNet(nn.Module):
-    def __init__(self):
-        super(MyNet, self).__init__()
+    def __init__(self):  #搭建层所需要的信息
+        super(MyNet, self).__init__() #继承Mynet到模块去
 
         "网络的各层具体结构定义"  
 
     
-    def forward(self,x):
+    def forward(self,x): #神经网络前向传递的过程，真正网络搭建处
 
         "网络各层的输入输出传递" 
         
@@ -79,7 +81,7 @@ class MyNet(nn.Module):
 假设定义一个网络，输入为3通道大小为28*28的图片，经过以下网络输出10分类softmax分类结果：
 卷积->卷积->ReLu激活->池化->卷积->卷积->ReLu激活->全连接->全连接->softmax
 ### 方法一：
-```
+```py
 import torch.nn as nn
 
 class MyNet(nn.Module):
@@ -372,7 +374,7 @@ MyNet6的参数打印两种结果:
 ![](1.png)  
 
 MyNet7的参数打印两种结果：
-![](2.png)
+![](2.png)  
 此时会发现summary方法输出的参数符合计算，但parameters_count方法输出的参数量少了。  
 
 为什么会出现这种问题？要想找到原因肯定是要先了解网络是怎么构建的，从网络构建可以看出，这个网络只初始化了两个卷积层对象——conv1和conv2，然后在网络构建时（forward里面），重复调用了conv2，这样做是因为：根据pytorch官方的教程，这样可以实现参数共享，也就是Conv2d-2 和Conv2d-3 层共享了conv2的参数。也就是其实这里只用了一个卷积层的参数，所以parameters_count 计算的是对的，但是torchsummary为什么计算成了19392？ 那是因为torchsummary 计算时是先把层结构打印下来，然后再统计对各个层的参数求和，这样一来，它不会区分conv2d-2和conv2d-3里面的参数是否相同，只是根据结构都打印且统计了出来。所以在遇到参数共享的时候，torchsummary统计的是不正确的。  

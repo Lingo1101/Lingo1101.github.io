@@ -2,7 +2,8 @@
 title: 深度学习划水基础
 date: 2020-10-24 23:05:19
 tags: deeplearn 
-categories: learn
+    - 神经网络
+categories: 玲酱の学习笔记
 ---
 **摘要**：神经网络的核心组件，即层、网络、目标函数和优化器；  
 
