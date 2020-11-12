@@ -30,7 +30,7 @@ categories: 玲酱の学习笔记
 (1) 如何高效快速产生建议框？  
 FASTER-RCNN创造性地采用卷积网络自行产生建议框，并且和目标检测网络共享卷积网络，使得建议框数目从原有的约2000个减少为300个，且建议框的质量也有本质的提高.
 
-**Faster R CNN结构详解**
+## **Faster R CNN结构详解**
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200610224244954.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3JlaW5kZWVyMTEwMQ==,size_16,color_FFFFFF,t_70)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200610224249176.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3JlaW5kZWVyMTEwMQ==,size_16,color_FFFFFF,t_70)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200610224249833.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3JlaW5kZWVyMTEwMQ==,size_16,color_FFFFFF,t_70)
@@ -43,7 +43,7 @@ FASTER-RCNN创造性地采用卷积网络自行产生建议框，并且和目标
 
 
 
-**进一步了解目标检测**
+### **进一步了解目标检测**  
 1、[https://blog.csdn.net/qq_35451572/article/details/80249259](https://blog.csdn.net/qq_35451572/article/details/80249259)
 
 2、[https://blog.csdn.net/qq_35451572/article/details/80249259?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase](https://blog.csdn.net/qq_35451572/article/details/80249259?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase)
