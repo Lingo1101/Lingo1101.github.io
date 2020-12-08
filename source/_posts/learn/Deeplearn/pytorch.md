@@ -417,7 +417,7 @@ class net1(nn.Module):
         return x
 
 net = net1()
-print(net)
+print(net)  #summery(net,(32,32,3))
 # net1(
 #   (modules): ModuleList(
 #     (0): Linear(in_features=10, out_features=10, bias=True)
@@ -450,7 +450,9 @@ print(list(net.parameters()))
 # []
 ```
 使用 Python 的 list 添加的全连接层和它们的 parameters 并没有自动注册到网络中。虽然还是可以使用 forward 来计算输出结果，但是如果用 net2 实例化的网络进行训练的时候，因为这些层的 parameters 不在整个网络之中，所以其网络参数也不会被更新，也就是无法训练。  
+  
 
+  
 除此之外，ModuleList中添加的层没有先后顺序，最终顺序是按照forward函数里面的执行顺序决定，如下：
 ```
 class net3(nn.Module):

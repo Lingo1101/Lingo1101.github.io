@@ -6,5 +6,5 @@ tags: deeplearn
 categories: 玲酱の学习笔记
 ---
 
-![](5.png)
-![](6.jpg)
+![e](5.png)  
+![6](6.jpg)
