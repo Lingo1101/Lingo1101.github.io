@@ -62,7 +62,7 @@ pytorch只会处理二维数据
 # pytorch模型构建
 ## 模型总体结构
 
-```py
+```python
 import torch.nn as nn
 
 class MyNet(nn.Module):
